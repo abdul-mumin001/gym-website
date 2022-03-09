@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mumin's fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Balloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{ 
+        font-family: 'Baloo Bhai', cursive;
+
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/photo-1571902943202-507ec2618e8f.jfif');
+    }
+    .left{ display: inline-block; 
+        border: 2px solid #ec082a;
+        position: absolute;
+        left: 60px;
+        top: 8pxpx;
+
+
+    }
+    .left img{
+        width: 136px;
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{ display: block;
+        width: 40%;
+        margin: 12px auto;
+        border: 2px solid #39d412;
+        
+    }
+    .right{ position: absolute;
+        right: 36px;
+        top: 8px;
+        display: inline-block;
+        border: 2px solid #9acd32; 
+        
+        border: 2px solid #2135ec;
+
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 38px 28px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: tomato;
+    }
+    .btn{
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .btn{
+        background-color: rgb(50, 156, 205);
+    }
+    .container{
+        color: green;
+        border: 2px solid aqua;
+        margin: 120px 100px;
+        padding: 75px ;
+        width: 40%;
+        border-radius: 30px;
+    }
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+         <img src="img/istockphoto-876895654-1024x1024.jpg" alt="">
+         <div>Mumin's fitness</div>
+        </div>
+        <!-- mid box for navber -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitnees centre</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+
+
+        </div>
+        <!-- right box for button  -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of West Silchar now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <label for="name">Enter your name</label>
+                <input type="text" name="" placeholder="Enter your name"><br><br>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                <button class="btn">submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
