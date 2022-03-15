@@ -19,10 +19,10 @@
         background: url('img/photo-1571902943202-507ec2618e8f.jfif');
     }
     .left{ display: inline-block; 
-        border: 2px solid #ec082a;
+        /* border: 2px solid #64585a79; */
         position: absolute;
         left: 60px;
-        top: 8pxpx;
+        top: 8px;
 
 
     }
@@ -31,20 +31,19 @@
     }
     .left div{
         text-align: center;
+        color: magenta;
     }
     .mid{ display: block;
         width: 45%;
-        margin: 12px auto;
-        border: 2px solid #39d412;
+        margin: 35px auto;
+        /* border: 2px solid #39d412; */
         
     }
     .right{ position: absolute;
         right: 36px;
-        top: 8px;
+        top: 45px;
         display: inline-block;
-        border: 2px solid #9acd32; 
-        
-        border: 2px solid #2135ec;
+        /* border: 2px solid #9acd32;  */
 
 
     }
@@ -80,12 +79,41 @@
         background-color: rgb(50, 156, 205);
     }
     .container{
-        color: green;
+        color: #2135ec;
         border: 2px solid aqua;
-        margin: 120px 100px;
-        padding: 75px ;
-        width: 40%;
+        margin: 50px 400px;
+        padding: 30px ;
+        width: 43%;
         border-radius: 30px;
+    }
+    .form-group label{
+        font-family: 'Baloo Bhai', cursive;
+        color: blue;
+        font-size: 20px;
+        
+    }
+
+
+    .form-group input{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+        color: magenta;
+
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
     }
 
 
@@ -120,10 +148,22 @@
         <h1>Join the best gym of West Silchar now</h1>
         <form action="noaction.php">
             <div class="form-group">
+                
                 <label for="name">Enter your name</label>
-                <input type="text" name="" placeholder="Enter your name"><br><br>
+                <input type="text" name="" placeholder="Enter your name">
+
+                <label for="Age">Enter your Age</label>
+                <input type="text" name="" placeholder="Enter your Age">
+
+                <label for="Gender">Enter your Gender</label>
+                <input type="text" name="" placeholder="Enter your Gender">
+
+                <label for="Street">Enter your Street</label>
+                <input type="text" name="" placeholder="Enter your Street">
+
                 <label for="phone">Enter your phone number:</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
                 <button class="btn">submit</button>
             </div>
         </form>
